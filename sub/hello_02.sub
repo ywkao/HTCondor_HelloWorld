@@ -1,0 +1,9 @@
+executable = ./script/hello_02.sh
+arguments  = $(ClusterID) $(ProcID)
+output     = output/hello.$(ClusterID).$(ProcID).out
+error      = error/hello.$(ClusterID).$(ProcID).err
+log        = log/hello.$(ClusterID).$(ProcID).log
+
+RequestCpus = 4
++JobFlavour = "espresso"
+queue
